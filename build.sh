@@ -26,7 +26,8 @@ function bootrun() {
 }
 
 function run() {
-	package && java -Xdebug -Xrunjdwp:transport=dt_socket,address=5000,server=y,suspend=n -jar target/casconfigserver.war 
+	package && java -Xdebug -Xrunjdwp:transport=dt_socket,address=5001,server=y,suspend=n -jar target/casconfigserver.war
+#	package && java -Xdebug -Xrunjdwp:transport=dt_socket,address=5000,server=y,suspend=n -jar target/casconfigserver.war 
 }
 
 if [ $# -eq 0 ]; then
